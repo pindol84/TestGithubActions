@@ -16,3 +16,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: |
+          cmake -B build\x64 -A x64
+          cmake --build build\x64 --config Release
