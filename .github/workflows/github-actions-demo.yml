@@ -19,3 +19,10 @@ jobs:
       - run: |
           cmake -B build\x64 -A x64
           cmake --build build\x64 --config Release
+  List-Files:
+    runs-on: self-hosted
+    steps:
+      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}      
