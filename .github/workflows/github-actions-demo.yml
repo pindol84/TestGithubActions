@@ -1,7 +1,7 @@
 name: My First GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
-permissions: read|write
+permissions: read-all|write-all
 jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
